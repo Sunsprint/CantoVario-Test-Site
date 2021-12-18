@@ -1,6 +1,6 @@
 .u-body .u-search-result-container {
   position: relative;
-  max-width: 200px;
+  max-width: 500px;
   font-family: montserrat;
 }
 
@@ -17,7 +17,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 6px;
-  background: #292870
+  background: #292870;
   max-height: 250px;
   overflow-y: auto;
   /* visibility: hidden;
@@ -32,7 +32,7 @@
 
 .u-search-result, .title, .subtitle {
   display: block;
-  color: #FFFFFF;
+  color: #292870;
   text-decoration: none;
   padding: 10px;
   font-size: 0.6em;
