@@ -10,7 +10,7 @@ const pages = [
     { display: 'Cold Water', name: 'cold water', artist: 'Major Lazer', key: 'F#-Minor'},
     { display: 'Cool for the Summer', name: 'cool for the summer', artist: 'Demi Lovato', key: 'F-Minor'},
     { display: 'Don\'t Cha', name: 'don\'t cha', artist: 'Pussycat Dolls', key: 'C#-Major'},
-    { display: 'Don\'t Wann Know', name: 'don\'t wanna know', artist: 'Maroon 5', key: 'G-Major'},
+    { display: 'Don\'t Wanna Know', name: 'don\'t wanna know', artist: 'Maroon 5', key: 'G-Major'},
     { display: 'Drop It Like It\'s Hot', name: 'drop it like it\'s hot', artist: 'Snoop Dogg', key: 'C#-Major'},
     { display: 'Evacuate the Dance Floor', name: 'evacuate the dance floor', artist: 'Cascada', key: 'F#-Minor'},
     { display: 'Fancy', name: 'fancy', artist: 'Iggy Azalea', key: 'A#-Minor'},
@@ -64,7 +64,7 @@ function setList(group) {
         setNoResults();
     } else {
         const htmlString = group.map((element) => {
-            return `<li>class="u-search-result"><h4 class="title">${element.display} by ${element.artist}</h4></li>`
+            return `<li><h4 class="subtitle">${element.display} by ${element.artist}</h4></li>`
         }).join('\n');
         list.innerHTML = htmlString
     }
