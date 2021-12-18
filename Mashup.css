@@ -40,11 +40,11 @@
 }
 
 .u-search-result:hover {
-  background: #5E5E5E;
+  background: #292870;
 }
 
 .u-search-result:not(:last-of-type) {
-  border-bottom: 1px solid #5E5E5E;
+  border-bottom: 1px solid #292870;
 }
 
 .title {
