@@ -59,7 +59,7 @@ const pages = [
 const list = document.getElementById('list');
 
 function setList(group) {
-    clearList();
+    //clearList();
     if (group.length === 0) {
         setNoResults();
     } else {
