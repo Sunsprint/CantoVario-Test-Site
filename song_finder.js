@@ -64,7 +64,7 @@ function setList(group) {
         setNoResults();
     } else {
         const htmlString = group.map((element) => {
-            return `<li>${element.display} by ${element.artist}</li>`
+            return `<li><h4>${element.display} by ${element.artist}<h4></li>`
         }).join('\n');
         list.innerHTML = htmlString
     }
