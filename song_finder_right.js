@@ -56,7 +56,7 @@ const pages = [
     { display: 'Worth It', name: 'worth it', artist: 'Fifth Harmony', key: 'G#-Major'},
 ]
 
-const list = document.getElementById('list');
+const list = window.getElementById('list');
 
 function setList(group) {
     clearList();
@@ -77,9 +77,9 @@ function clearList() {
 }
 
 function setNoResults() {
-    const item = document.createElement('li');
+    const item = window.createElement('li');
     item.classList.add('list-group-item');
-    const text = document.createTextNode('No results found');
+    const text = window.createTextNode('No results found');
     item.appendChild(text);
     list.appendChild(item);
 }
@@ -93,7 +93,7 @@ function getRelevancy(value, searchTerm) {
         return 0;
     }
 }
-const searchInput = document.getElementById('search');
+const searchInput = window.getElementById('search');
 
 searchInput.addEventListener('keyup', (event) => {
     let value = event.target.value;

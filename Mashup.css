@@ -40,7 +40,7 @@
 }
 
 .u-search-result:hover {
-  background: #292870;
+  background: #6462b6;
 }
 
 .u-search-result:not(:last-of-type) {
@@ -50,6 +50,7 @@
 .title {
   font-size: 2em;
   font-weight: bold;
+  color: 
 }
 
 .paragraph {
