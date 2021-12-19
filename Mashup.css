@@ -1,14 +1,14 @@
-.u-body .u-search-result-container {
+.u-body .u-section .u-search-result-container {
   position: relative;
   max-width: 500px;
   font-family: montserrat;
 }
 
-.u-body .u-search-input * {
+.u-body .u-section .u-search-input * {
   transition: background 0.15s, box-shadow 0.15s;
 }
 
-.u-body .u-search-input, .u-search-result-container {
+.u-body .u-section .u-search-input, .u-search-result-container {
   border-radius: 5px;
 }
 
