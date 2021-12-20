@@ -56,7 +56,7 @@ const pages = [
     { display: 'Worth It', name: 'worth it', artist: 'Fifth Harmony', key: 'G#-Major', href:'#'},
 ]
 
-const list = document.getElementById('list');
+const list = document.getElementById('list2');
 
 function setList(group) {
     clearList();

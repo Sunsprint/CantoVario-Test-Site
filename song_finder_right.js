@@ -56,7 +56,7 @@ const pages = [
     { display: 'Worth It', name: 'worth it', artist: 'Fifth Harmony', key: 'G#-Major', href:'#'},
 ]
 
-const list = document.getElementById('list');
+const list = document.getElementById('list2');
 
 function setList(group) {
     clearList();
@@ -64,7 +64,7 @@ function setList(group) {
         setNoResults();
     } else {
         const htmlString = group.map((element) => {
-            return `<li><a href="${element.href}" class="u-search-result"><h4 class="title">${element.display} by ${element.artist}<h4></a></li>`
+            return `<li><a href="${element.href}" class="u-search-result-left"><h4 class="title">${element.display} by ${element.artist}<h4></a></li>`
         }).join('\n');
         list.innerHTML = htmlString
     }
