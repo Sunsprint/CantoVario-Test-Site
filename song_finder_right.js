@@ -56,7 +56,7 @@ const pages = [
     { display: 'Worth It', name: 'worth it', artist: 'Fifth Harmony', key: 'G#-Major', href:'#'},
 ]
 
-const list = document.getElementById('list2');
+const list = document.getElementById('list1');
 
 function setList(group) {
     clearList();
@@ -64,7 +64,7 @@ function setList(group) {
         setNoResults();
     } else {
         const htmlString = group.map((element) => {
-            return `<li><a href="${element.href}" class="u-search-result-left"><h4 class="title">${element.display} by ${element.artist}<h4></a></li>`
+            return `<li><a href="${element.href}" class="u-search-result"><h4 class="title">${element.display} by ${element.artist}<h4></a></li>`
         }).join('\n');
         list.innerHTML = htmlString
     }
@@ -93,7 +93,7 @@ function getRelevancy(value, searchTerm) {
         return 0;
     }
 }
-const searchInput = document.getElementById('search');
+const searchInput = document.getElementById('search1');
 
 searchInput.addEventListener('keyup', (event) => {
     let value = event.target.value;
