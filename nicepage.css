@@ -20599,7 +20599,7 @@ a.u-button-style.u-border-20 {
 }
 /*begin-variables font-family*/
 .u-body {
-  font-family: 'Courier New',monospace;
+  font-family: Ubuntu,sans-serif;
 }
 h1,
 h2,
@@ -20607,7 +20607,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Courier New',monospace;
+  font-family: Ubuntu,sans-serif;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -20628,10 +20628,10 @@ h6 {
 /*end-variables color*/
 /*begin-variables font*/
 .u-custom-font.u-text-font {
-  font-family: 'Courier New',monospace !important;
+  font-family: Ubuntu,sans-serif !important;
 }
 .u-custom-font.u-heading-font {
-  font-family: 'Courier New',monospace !important;
+  font-family: Ubuntu,sans-serif !important;
 }
 /*end-variables font*/
 /*begin-variables colors*/
@@ -34952,15 +34952,11 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h2:not(.u-subtitle)
         {
-        font-size: 6rem;
-        line-height: 1;
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        list-icon-spacing: 0.3;
-        list-icon-size: 0.8;
-        font-family: Oswald,sans-serif;
         }
         h3
         {
@@ -35069,7 +35065,7 @@ a.u-link.u-text-hover-grey-90:hover {
         @media (max-width: 575px) {
         h1:not(.u-title)
         {
-        font-size: 2.25rem;
+        font-size: 1.875rem;
         }
         }
         @media (max-width: 575px) {
@@ -35105,7 +35101,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         .u-xs h1:not(.u-title)
         {
-        font-size: 2.25rem;
+        font-size: 1.875rem;
         }
         .u-xs h2:not(.u-subtitle)
         {
@@ -35119,13 +35115,6 @@ a.u-link.u-text-hover-grey-90:hover {
         /** cms-rules **/
 
         /** color-rules **/
-        .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > h2:not(.u-subtitle),
-        .u-gradient > .u-container-layout > h2:not(.u-subtitle),
-        .u-image:not(.u-shading) > .u-container-layout > h2:not(.u-subtitle),
-        h2:not(.u-subtitle)
-        {
-        color: #ffffff;
-        }
         .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a,
         .u-gradient > .u-container-layout > a,
         .u-image:not(.u-shading) > .u-container-layout > a,
@@ -35182,10 +35171,6 @@ a.u-link.u-text-hover-grey-90:hover {
         /** color-rules **/
 
         /** alt-color-rules **/
-        .u-shading h2:not(.u-subtitle),.u-overlap-contrast .u-header h2:not(.u-subtitle):not(.u-nav-link):not(.u-btn)
-        {
-        color: #b3b3b3;
-        }
         .u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-1-light-1 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-base a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-3 a,.u-palette-4-base a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
         {
         color: #bebded;
@@ -35261,12 +35246,9 @@ a.u-link.u-text-hover-grey-90:hover {
   font-size: 1.25rem;
 }
 @media (max-width: 1199px) {
-  .u-header .u-sheet-1 {
-    min-height: 205px;
-  }
-
   .u-header .u-group-1 {
     width: 256px;
+    margin-top: 15px;
   }
 
   .u-header .u-text-1 {
@@ -35276,21 +35258,24 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-menu-1 {
     width: auto;
-    margin-right: 0;
     margin-top: -65px;
+    margin-right: 0;
+    margin-bottom: 34px;
   }
 }
-
+@media (max-width: 991px) {
+  .u-header .u-sheet-1 {
+    min-height: 129px;
+  }
+}
 @media (max-width: 767px) {
-  .u-header .u-menu-1 {
-    margin-right: auto;
-    margin-left: 0;
-    margin-top: 20px;
+  .u-header .u-sheet-1 {
+    min-height: 114px;
   }
 }
 @media (max-width: 575px) {
   .u-header .u-sheet-1 {
-    min-height: 174px;
+    min-height: 129px;
   }
 
   .u-header .u-text-1 {
@@ -35298,7 +35283,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
-    margin-right: -4px;
+    margin-right: -36px;
   }
 }
 .u-footer .u-sheet-1 {
