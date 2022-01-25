@@ -4,6 +4,10 @@
   font-family: montserrat;
 }
 
+.u-body .u-section .u-search-input {
+  font-size: 0.6em;
+}
+
 .u-body .u-section .u-search-input * {
   transition: background 0.15s, box-shadow 0.15s;
 }
@@ -37,6 +41,18 @@
   padding: 10px;
   font-size: 0.6em;
   cursor: pointer;
+}
+
+.u-list-group-item {
+  font-size: 1.3em;
+  padding: 10px;
+  font-weight: bold;
+  color:#efab47;
+}
+
+.u-search-input {
+  font-size: 1.3em;
+  color:#292870;
 }
 
 .u-search-result:hover {
@@ -80,7 +96,7 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin-bottom: 0;
+  margin-bottom: 10;
   margin-top: 0;
 }
 
@@ -93,7 +109,7 @@
 }
 
 .u-section-1 .u-text-2 {
-  margin-bottom: 0;
+  margin-bottom: 10;
   margin-top: 0;
 }
 

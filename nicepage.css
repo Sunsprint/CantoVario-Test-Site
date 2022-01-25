@@ -17999,7 +17999,7 @@ blockquote .small:before {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: inherit;
+  /*color: inherit;*/
 }
 .u-search-left.u-search input {
   padding-right: 0.8em;

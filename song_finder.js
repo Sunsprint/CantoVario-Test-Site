@@ -58,13 +58,14 @@ const pages = [
 
 const list = document.getElementById('list');
 
+// setList takes input group 
 function setList(group) {
     clearList();
     if (group.length === 0) {
         setNoResults();
     } else {
         const htmlString = group.map((element) => {
-            return `<li><a href="${element.href}" class="u-search-result"><h4 class="title">${element.display} by ${element.artist}<h4></a></li>`
+            return `<li><a href="${element.href}" class="u-search-result"><h4 class="title">${element.display} by ${element.artist}</h4></a></li>`
         }).join('\n');
         list.innerHTML = htmlString
     }
@@ -78,8 +79,8 @@ function clearList() {
 
 function setNoResults() {
     const item = document.createElement('li');
-    item.classList.add('list-group-item');
-    const text = document.createTextNode('No results found');
+    item.classList.add('u-list-group-item');
+    const text = document.createTextNode('No Results Found');
     item.appendChild(text);
     list.appendChild(item);
 }
